@@ -1,0 +1,10 @@
+node_modules
+*.log
+.DS_Store
+.skip-release
+*.js
+*.d.ts
+*.map
+
+!.prettierrc.js
+!scripts/*.js

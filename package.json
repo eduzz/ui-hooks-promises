@@ -1,0 +1,47 @@
+{
+  "name": "@eduzz/ui-hooks-promises",
+  "description": "Eduzz Hooks: Promises",
+  "version": "0.0.1",
+  "main": "./index.js",
+  "types": "./index.d.ts",
+  "author": "Eduzz Team",
+  "license": "MIT",
+  "private": false,
+  "homepage": "https://github.com/eduzz/ui-hooks-promises",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eduzz/ui-hooks-promises"
+  },
+  "bugs": {
+    "url": "https://github.com/eduzz/ui-hooks-promises/issues"
+  },
+  "scripts": {
+    "clean": "git add . && git clean -fdx . -e node_modules",
+    "prebuild": "yarn clean && yarn lint",
+    "build": "yarn tsc -p tsconfig.json",
+    "lint": "eslint . --ext js,ts,tsx"
+  },
+  "dependencies": {
+    "lodash-es": "^4"
+  },
+  "devDependencies": {
+    "@eduzz/eslint-config": "^0.0.3",
+    "@types/lodash-es": "^4",
+    "@types/react-dom": "^18.2.6",
+    "@types/react": "^18.2.14",
+    "@typescript-eslint/eslint-plugin": "^5.61.0",
+    "@typescript-eslint/parser": "^5.61.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-eslint-plugin": "^5.1.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-unused-imports": "^2.0.0",
+    "eslint": "^8.44.0",
+    "prettier": "^2",
+    "react-dom": "^18.2.0",
+    "react": "^18.2.0",
+    "typescript": "^5.1.6"
+  }
+}
