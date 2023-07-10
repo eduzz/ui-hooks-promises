@@ -1,7 +1,8 @@
 {
   "name": "@eduzz/ui-hooks-promises",
   "description": "Eduzz Hooks: Promises",
-  "version": "0.0.2",
+  "version": "0.0.3",
+  "keywords": ["promise", "react-hooks", "hooks", "react", "eduzz"],
   "main": "./index.js",
   "types": "./index.d.ts",
   "author": "Eduzz Team",
