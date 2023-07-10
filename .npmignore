@@ -10,3 +10,5 @@ tsconfig.json
 !/**/**/*.d.ts
 .git
 scripts
+*.md
+!README.md
