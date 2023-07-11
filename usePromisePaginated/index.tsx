@@ -14,10 +14,11 @@ export interface PaginationParams<D extends Record<string, any> = Record<string,
 }
 
 export interface PaginationResponse<T = unknown> {
-  total: number;
+  total?: number;
   result: T[];
 }
 interface DataState<T> extends PaginationResponse<T> {
+  total: number;
   hasMore: boolean;
 }
 
@@ -117,7 +118,7 @@ export default function usePromisePaginated<P extends PaginationParams, R>(
         setError(null);
 
         setData(data => {
-          const total = response.total ?? data.total;
+          const total = response.total ?? data.total ?? data.result?.length ?? 0;
           const result =
             (params.page === initialParams.page || !infintyScroll
               ? response.result
