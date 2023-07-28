@@ -1,7 +1,7 @@
 {
   "name": "@eduzz/ui-hooks-promises",
   "description": "Eduzz Hooks: Promises",
-  "version": "0.0.5",
+  "version": "1.0.0",
   "keywords": [
     "promise",
     "react-hooks",
